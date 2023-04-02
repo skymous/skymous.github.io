@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>走路的小薯</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    #aa{
+        position: absolute;
+        top: 200px;
+        width: 800px;
+        height: 400px;
+        background-image: url(./mouse.png);
+        animation:  move 1s steps(2) infinite,go 3s forwards;
+    }
+    @keyframes move{
+        0%{
+            background-position: 0 0;
+         }
+         100%{
+            background-position: -1600px 0;
+         }
+        }
+   
+    @keyframes go {
+        0%{left: -20%; 
+         }
+         100%{
+            left:20%;
+            transform: translateX(-50);
+         }
+    }       
+        
+        
+    
+    </style>
+</head>
+<body>
+    <div id="aa"></div>
+</body>  
+
+</html>
