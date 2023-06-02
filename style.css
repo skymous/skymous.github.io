@@ -1,0 +1,545 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+av ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* 使用媒體查詢設定不同螢幕寬度的佈局 */
+@media screen and (max-width: 768px) {
+  header, section, footer {
+    height: auto; /* 螢幕寬度小於768px時取消固定高度，自適應內容高度 */
+  }
+}
+
+
+/*隱藏滾動條*/
+body::-webkit-scrollbar {
+  display: none;
+}
+html {
+  overflow: -moz-hidden-unscrollable; /*注意！若只打 hidden，chrome 的其它 hidden 會出問題*/
+  height: 100%;
+}
+
+body {
+  -ms-overflow-style: none;
+	line-height: 1;
+  height: 100%;
+	width: calc(100vw + 18px); /*瀏覽器滾動條的長度大約是 18px*/
+	overflow: auto;
+  background-color: rgb(33, 36, 68);
+}  
+nav ul li a {
+    text-decoration: none;
+    padding: 8px 10px;
+    color:  rgb(53, 35, 18);
+    border-radius: 5px;
+    width: 80px;
+    height: 15px;
+    font-size: 16px;
+    display: flex;
+    text-align: left;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif TC', serif;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ff9252;
+  }
+h1{
+    padding-top:60px;
+    color:  rgb(53, 35, 18);
+    text-align: center;
+    font-weight: bold;
+    font-family: "Noto Serif TC", serif;
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+h2 {
+    color: rgb(53, 35, 18);
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Noto Serif TC", serif;
+  }
+h5{
+    margin-top: 50px;
+    color:  rgb(53, 35, 18);
+    text-align: center;
+    font-weight: normal;
+    font-family: "Noto Serif TC", serif;
+    font-size: 18px;
+    letter-spacing: 10px; 
+  }
+.writings{
+    margin-top: 20px;
+    color: rgb(53, 35, 18);
+    text-align: center;
+    font-weight: normal;
+    font-family: "Noto Serif TC", serif;
+    font-size: 36px;
+    letter-spacing: 10px; 
+
+  }
+.indextopic{
+
+  
+    padding-top:60px;
+    font-size:40px;
+    color:  rgb(53, 35, 18);
+    text-align: center;
+    font-weight: bold;
+    font-family: "Noto Serif TC", serif;
+    letter-spacing: 20px;
+  }
+h6{
+  margin-top:20px;
+  text-align: center;
+  color: rgb(53, 35, 18);
+  font-weight: lighter;
+  font-family: "Noto Serif TC", serif;
+  font-size: 12px;
+  letter-spacing: 10px;
+}
+ /* 設定基本樣式 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 使用Viewport units設定元素大小 */
+header {
+  height: 20vh; /* 頂部區域佔螢幕高度的20% */
+  
+  position: relative;
+}
+
+section {
+  height: 60vh; /* 內容區域佔螢幕高度的60% */
+}
+
+footer {
+  height: 20vh; /* 底部區域佔螢幕高度的20% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*東西和圖*/
+
+
+.melting{ 
+  margin-left: 40%;
+  margin-right: auto;
+}
+#caret {
+  border-left: 2px solid #fff;
+  margin-left: 3px;
+  animation: blink-caret 1s infinite;
+}
+
+.links{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+
+.d-inline-block {
+  margin-left: 42%;
+  margin-top: 18px;
+  display: inline-block;
+}
+/* 手寫字樣式 */
+.typewriter span {
+  
+  font-size: 14px;
+  text-align: center;
+  font-weight:lighter;
+  font-family: "Noto Serif TC", serif;
+  overflow: hidden;
+  border-right: .1em solid rgb(53, 35, 18);;
+  white-space: nowrap;
+  animation: 
+    typing 1s steps(12, end),
+    blink-caret .6s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(53, 35, 18);}
+}
+
+p{
+  margin: 5px;
+  padding: 40px;
+  padding-top:80px;
+  color: rgb(53, 35, 18);
+  font-weight: normal;
+  
+  font-size: 18px;
+  letter-spacing: 3px; 
+  line-height:30px;
+
+  margin-right:20%;
+}
+.movies{
+  padding: 40px;
+  padding-top:80px;
+  color: rgb(53, 35, 18);
+  font-weight: normal;
+  
+  font-size: 18px;
+  letter-spacing: 3px; 
+  line-height:30px;
+  margin-left:90px;
+  margin-right:100px;
+  text-align: left;
+}
+.movie2{
+  margin-left: 80px;
+  padding: 20px;
+  padding-top:80px;
+  color:  rgb(53, 35, 18);
+  font-weight: normal;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 3px; 
+  line-height:30px;
+
+  margin-right:40%;
+}
+
+
+.movies0{
+  margin-top:auto;
+  text-align: center;
+  color:  rgb(53, 35, 18);
+  font-weight: lighter;
+  font-family: "Noto Serif TC", serif;
+  font-size: 14px;
+  letter-spacing: 6px;
+  line-height: 30px;
+}
+.bold {
+  font-family: "Noto Serif TC", serif;
+  margin-left: 80px;
+  padding-top:10px;
+  color: #ff9252;
+  font-size: 18px;
+  letter-spacing: 3px; 
+  line-height:30px;
+
+}
+
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.column {
+  flex: 1;
+  margin-right: 5px; /* 可選，用於設定兩個列之間的間距 */
+}
+.poem1{
+  width:200px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 0%;
+}
+.poem2{
+  margin-top: 20%;
+  margin-left:40%;
+  margin-right: 0%;
+  padding: 0%;
+}
+.poem3{
+  margin:0%;
+  width:400px;
+  margin-top: 20%;
+  margin-left:0%;
+  margin-right: 0%;
+  padding: 0%;
+}
+
+.novel1{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.writer{
+  font-size: 8px;
+  color: #302019;
+  font-weight: lighter;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 8px;
+  
+}
+
+.topic2{
+  margin: 0%;
+  margin-top: -25px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 8px;
+  color: rgb(53, 35, 18);;
+  font-weight: lighter;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 8px;
+  text-align: center;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.laundry{
+  width: 90%;
+margin-right: auto;
+  margin-left: auto;
+}
+
+.awards{
+  width: fit-content;
+  font-size: 24px;
+  color:rgb(179, 83, 0);
+  font-weight: lighter;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 8px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.awards2{
+  width: fit-content;
+  font-size: 18px;
+  color: #302019;
+  font-weight: lighter;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 8px;
+  margin: auto;
+  padding:10px;
+}
+
+.awards3{
+  width: fit-content;
+  font-size: 28px;
+  color: #302019;
+ 
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 8px;
+  margin: auto;
+  margin-top: 20px;
+  padding:20px;
+}
+
+/* 首頁 - Next 按鈕 */
+#nextButton{
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: transparent;
+  color: s#fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+  /* transition: opacity 0.5s ease; */
+  /* animation: fadeInAnimation 1s ease-in forwards, floatingAnimation 3s ease-in-out infinite; */
+  animation: floatingAnimation 3s ease-in-out infinite;
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#nextButton:hover{
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.nav_shinning{
+  border-radius: 40px;
+  animation: shinningAnimation 3s infinite;
+}
+
+@keyframes shinningAnimation{
+  0%{
+    background-color: transparent;
+  }    
+  50%{
+    background-color: #b1511a;
+  }
+  100%{
+    background-color: transparent  
+  }
+}
+
+
+/* @keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* 打字機效果 */
+
+  /* 分段理念容器 */
+  .typing-text{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 30%;
+  }
+
+  #line1,#line2,#line3,#line4,#line5{
+    display: flex;
+    align-items: center;
+    height: 15px;
+    text-align: center;
+  }
+
+  .typing-text p {
+    /*   display: inline; */
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    /* text-align: center; */
+    font-weight:lighter;
+    font-family: "Noto Serif TC", serif;
+    text-align: center;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    
+    .stories {
+      animation: floating 2s ease-in-out infinite;
+    }
