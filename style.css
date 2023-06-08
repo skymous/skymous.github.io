@@ -134,9 +134,7 @@ h5{
     letter-spacing: 10px; 
 
   }
-.indextopic{
-
-  
+.indextopic{  
     padding-top:60px;
     font-size:40px;
     color:  rgb(53, 35, 18);
@@ -514,7 +512,7 @@ margin-right: auto;
     display: flex;
     align-items: center;
     height: 15px;
-    text-align: center;
+    text-align: left;
   }
 
   .typing-text p {
@@ -525,7 +523,7 @@ margin-right: auto;
     /* text-align: center; */
     font-weight:lighter;
     font-family: "Noto Serif TC", serif;
-    text-align: center;
+    text-align: left;
     }
 
     @keyframes floating {
