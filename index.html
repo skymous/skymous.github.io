@@ -45,19 +45,23 @@ background-color: #fff;
   <body>
     
     <header>
-
+      <button class="hamburger-btn" onclick="toggleMenu()">☰</button>
       <div class="links">
-        <nav>
-          <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="page2.html">AI</a></li>
-            <li><a href="page3.html">洗衣機</a></li>
-            <li><a href="page5.html">電影</a></li>
-            <li><a href="page4.html">文藝獎</a></li>
-            
-          </ul>
-        </nav>
-      </div> 
+        
+        
+          <nav>
+            <ul>
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="page2.html">AI</a></li>
+              <li><a href="page3.html">洗衣機</a></li>
+              <li><a href="page5.html">電影</a></li>
+              <li><a href="page4.html">文藝獎</a></li>
+              
+            </ul>
+          </nav>
+      
+      </div>
+     
       <h1 class="indextopic">不完全變態</h1>
       <p class="topic2"> adj. (沒有)完全變態</p>
 </header>
@@ -80,7 +84,7 @@ background-color: #fff;
 </section>
 
    <!-- 下一頁按鈕 -->
-   <button id="nextButton" onclick="nextText()">></button> 
+   <button id="nextButton" onclick="nextText()" class="flybutton">></button> 
 
  <!-- 首頁背景圖，CSS #imageContainer 的寬高可變更圖片大小  -->
  <div id="imageContainer" style="display: none;" >

@@ -201,4 +201,8 @@ function nextText() {
   }, 8500);
 
 
- 
+  function toggleMenu() {
+    var links = document.querySelector('.links');
+    links.style.display = links.style.display === 'none' ? 'flex' : 'none';
+  }
+  
