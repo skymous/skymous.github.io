@@ -560,7 +560,9 @@ margin-right: auto;
       margin-right: 10px;
     }
 
-
+.flyman{
+  width: 100%; height: 100%; object-fit: cover; margin-left: 35%; margin-top: 100px;
+}
     
 
 
@@ -629,13 +631,12 @@ body{
      }
    
      #nextButton{
-  bottom: 10%;
+  bottom: 5%;
 }
 
-
-
-
-
+.flyman{
+  margin-left: 0%;
+}
 
 
 
