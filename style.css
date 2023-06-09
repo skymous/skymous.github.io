@@ -224,6 +224,7 @@ footer {
     list-style:none;
     margin-top: 20px;
     margin-left: 10px;
+   
 }
 
 
@@ -574,7 +575,10 @@ margin-right: auto;
 
     @media screen and (max-width:451px){
  
+body{
 
+  min-height: 1000px;
+}
       .hamburger-btn {
         display: block; /* 當寬度小於 360px 時顯示漢堡按鈕 */
         background-color: transparent;
@@ -589,6 +593,10 @@ margin-right: auto;
         
       }
 
+      .links li{
+        display: inline-block;
+      }
+
       nav ul li a {
         
         font-size: 14px;
@@ -596,16 +604,18 @@ margin-right: auto;
         text-align:left;
         float: left;
         align-items: center;
-        justify-content: center;
        padding: 5px 5px 10px 5px;
+       flex-direction: row;
+       
        
       }
 
 
      header{
-      height: 30%;
+      height: 20%;
      }
      .indextopic{  
+    
        font-size:28px;
        white-space: nowrap;
       
@@ -614,7 +624,7 @@ margin-right: auto;
       width:90%;
       font-size: 6px;
       word-break: break-all;
-      padding-top: 30%;
+      padding-top: 10%;
       margin-left: 10%;
      }
    
