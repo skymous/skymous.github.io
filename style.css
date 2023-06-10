@@ -564,9 +564,36 @@ margin-right: auto;
   width: 100%; height: 100%; object-fit: cover; margin-left: 35%; margin-top: 100px;
 }
     
+.next,.last {
+  text-decoration: none;
+ padding: 8px 10px;
+ color: brown;
+ border-radius: 5px;
+ width: 80px;
+ height: 15px;
+ display: flex;
+ text-align: left;
+ float: left;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Noto Serif TC', serif;
+ font-size: 16px;
+ }
 
-
-
+ .links-container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "Noto Serif TC", serif;
+    font-size:14px;
+    letter-spacing: 10px;
+}
+.link4{
+  text-decoration: none; /* 消除底線 */
+  color: rgb(238, 142, 58);
+}
 
 
 
@@ -577,10 +604,10 @@ margin-right: auto;
 
     @media screen and (max-width:451px){
  
-body{
+       body{
 
   min-height: 1000px;
-}
+      }
       .hamburger-btn {
         display: block; /* 當寬度小於 360px 時顯示漢堡按鈕 */
         background-color: transparent;
@@ -616,6 +643,7 @@ body{
      header{
       height: 20%;
      }
+     /*首頁 */
      .indextopic{  
     
        font-size:28px;
@@ -638,6 +666,45 @@ body{
   margin-left: 0%;
 }
 
+/* 洗衣機 */
+.next,.last{
+  font-size: 8px;
+}
+.laundry{
+  font-size: 16px;
+  padding: 0;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+/* 居批踢 */
+
+
+/* 電影 */
+
+/* 文藝獎 */
+.container {
+  display:block;
+  
+}
+.column {
+  text-align:left;
+  flex: 0;
+ 
+}
+.poem2,.poem3{
+  margin: 0;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 16px;
+}
+.link4{
+  font-size: 8px;
+  
+}  
+.links-container{
+  margin-left: 5%;
+  margin-right: 5%;
+}    
 
 
 
@@ -648,5 +715,15 @@ body{
 
 
 
-      
+
+
+
+
+
+
+
+
+
+
+
     }
