@@ -595,10 +595,76 @@ margin-right: auto;
   color: rgb(238, 142, 58);
 }
 
+.bold{
+  margin-left: 30%;
+  width:fit-content ;
+}
 
+.color-rectangle {
+  background-color: #2C2D32;
+  width: 250px; /* 調整寬度 */
+  height:6500px; /* 調整高度 */
+  position: absolute;
+ 
+  top: 24%;
+  left: 0;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
 
+.rectangle3 {
+  position: absolute;
+  width: 80%;
+  height: 60px;
+  border: 0.1px solid #ffffff;
+  opacity: 50%;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
 
+.rectangle {
+  width: 70%;
+  height: 70px; /* 調整高度 */
+  background-color: #3B3C44;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5); /* 調整陰影效果 */
+  position: fixed;
+  bottom:20px;
+  right:50px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
 
+.text,.text3 {
+  color: white;
+  font-size: 18px; /* 調整字體大小 */
+  font-weight: lighter;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.text3{
+  margin-top: 20px;
+  font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  font-size: 20px;
+  color:#fff
+}
+.text2{
+  
+  color: rgb(127, 120, 128);
+  font-size: 14px; /* 調整字體大小 */
+  font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  font-weight: bold;
+ padding-top: 90px;
+  margin-left: 25px;
+  width: fit-content;
+}
 
 
 
@@ -678,43 +744,172 @@ margin-right: auto;
 }
 /* 居批踢 */
 
+.color-rectangle{
+  margin-top: 10%;
+  width: 25%;
+  height:1250%;
+}
+
+.rectangle3 {
+
+  width: 85%;
+  height: 50px;
+  margin-left: 5%;
+ 
+}
+
+.rectangle {
+  width: 70%;
+  height: 60px; /* 調整高度 */
+  background-color: #3B3C44;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5); /* 調整陰影效果 */
+  position: fixed;
+  bottom:20px;
+  right:50px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.text,.text3 {
+
+  font-size: 14px; /* 調整字體大小 */
+
+}
+.text3{
+  margin-left: 7%;
+  margin-top: 15%;
+  font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+
+}
+.text2{
+  margin-left: 5%;
+  font-size: 10px; /* 調整字體大小 */
+
+}
+
+.ai{
+  margin-right: 2%;
+}
+.ai2{
+  width:80%;
+  font-size: 16px;
+  word-break: break-all;
+  
+}
+
+.aii{
+  margin-top: 1%;
+  margin-left: 10%;
+  padding: 10%;
+  width:75%;
+  font-size: 16px;
+  
+}
+
+
+
+
+
+
+
+
 
 /* 電影 */
 
+.movies,.movie2,.movie3{
+  font-size: 16px;
+  width:80%;
+  margin-left: 5%;
+  
+}
+
+.bold{
+  font-size: 14px;
+  margin-left: 2%;
+  width: 80%;
+  
+}
+pre{
+  white-space: normal;
+}
+
+
 /* 文藝獎 */
 .container {
-  display:block;
+  display:flex;
+  flex-direction: column;
   
 }
 .column {
-  text-align:left;
+  text-align:center;
   flex: 0;
  
 }
-.poem2,.poem3{
+
+.poem1{
+  margin-top: 55%;
+}
+.poem2{
   margin: 0;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-top:55%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
 }
-.link4{
-  font-size: 8px;
-  
-}  
+
+.poem3{
+  margin: 0;
+  margin-top:30%;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+.links-container a{
+  flex-direction:column;
+  text-align: center;
+}
+
+.link4 {
+  font-size:12px;
+  display: flex; /* 顯示連結列表 */
+  flex-direction: column; /* 調整連結列表的排列方向為垂直 */
+  margin-bottom: 10%;
+}
+
+.awards3{
+  margin-top: 50%;
+  font-size: 24px;
+}
+.awards{
+  font-size: 18px;
+}
+.awards2{
+  font-size: 14px;
+}
 
 
+.novel1{
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50%;
+  word-break: break-all;
+  font-size: 14px;
+  text-align: left;
+}
 
+.somephoto,.somedraw{
+  margin-top: 50%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.enovel{
+  font-size: 14px;
+  margin-top: 50%;
+}
 
 
 
